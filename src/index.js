@@ -24,7 +24,7 @@ const render = ripple => next => el => {
 
   var node = next(el)
 
-  return !node ? undefined
+  return !node || !node.state ? undefined
        : features
           .map(key('body'))
           .map(d => d.call(node, node.state))
