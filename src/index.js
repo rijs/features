@@ -31,6 +31,7 @@ const render = ripple => next => el => {
 }
 
 const log = require('utilise/log')('[ri/features]')
+import includes from 'utilise/includes'
 import client from 'utilise/client'
 import header from 'utilise/header'
 import append from 'utilise/append'

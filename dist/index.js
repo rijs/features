@@ -5,6 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = features;
 
+var _includes = require('utilise/includes');
+
+var _includes2 = _interopRequireDefault(_includes);
+
 var _client = require('utilise/client');
 
 var _client2 = _interopRequireDefault(_client);
@@ -64,7 +68,7 @@ var render = function render(ripple) {
       var features = (0, _str2.default)((0, _attr2.default)(el, 'is')).split(' ').map((0, _from2.default)(ripple.resources)).filter((0, _header2.default)('content-type', 'application/javascript')),
           css = (0, _str2.default)((0, _attr2.default)('css')(el)).split(' ');
 
-      features.filter((0, _by2.default)('headers.needs', includes('[css]'))).map((0, _key2.default)('name')).map((0, _append2.default)('.css')).filter((0, _not2.default)(_is2.default.in(css))).map(function (d) {
+      features.filter((0, _by2.default)('headers.needs', (0, _includes2.default)('[css]'))).map((0, _key2.default)('name')).map((0, _append2.default)('.css')).filter((0, _not2.default)(_is2.default.in(css))).map(function (d) {
         return (0, _attr2.default)('css', ((0, _str2.default)((0, _attr2.default)('css')(el)) + ' ' + d).trim())(el);
       });
 
