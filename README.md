@@ -2,6 +2,8 @@
 [![Coverage Status](https://coveralls.io/repos/rijs/features/badge.svg?branch=master&service=github)](https://coveralls.io/github/rijs/features?branch=master)
 [![Build Status](https://travis-ci.org/rijs/features.svg)](https://travis-ci.org/rijs/features)
 
+Extends the [rendering pipeline]() to enhance a component with other features (mixins).
+
 Extend components with features
 
 ```html
@@ -19,4 +21,14 @@ ripple('feature', function(){ this.innerHTML += 'bar' } )
 <base-component is="feature">foobar<base-component>
 ```
 
-Features may also contribute and mixin their own styles (just specify a [needs header](https://github.com/rijs/needs)). 
+This pattern is the same as:
+
+```js
+d3.select(element)
+  .call(component)
+  .call(feature1)
+  .call(feature2)
+  .call(feature3)
+```
+
+Features may also contribute and mixin their own styles (just extend `css` attribute). 
