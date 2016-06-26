@@ -75,7 +75,7 @@ var render = function render(ripple) {
       var node = next(el);
 
       return !node || !node.state ? undefined : features.map((0, _key2.default)('body')).map(function (d) {
-        return d.call(node, node.state);
+        return d.call(node.shadowRoot || node, node.state);
       });
     };
   };

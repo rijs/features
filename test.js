@@ -86,7 +86,6 @@ describe('Features', d => {
       expect(result).to.not.be.ok
       done()
     })
-    
   })
 
   it('should not apply feature if base component not run - 2', done => {
@@ -104,8 +103,7 @@ describe('Features', d => {
       expect(includes('css="foo-bar-6.css"')(el.outerHTML)).to.be.ok
       expect(result).to.not.be.ok
       done()
-    })
-    
+    })  
   })
 
 })
