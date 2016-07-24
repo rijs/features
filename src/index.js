@@ -25,9 +25,10 @@ const render = ripple => next => el => {
   var node = next(el)
 
   return !node || !node.state ? undefined
-       : features
+       : (features
           .map(key('body'))
           .map(d => d.call(node.shadowRoot || node, node.state))
+          , node)
 }
 
 const log = require('utilise/log')('[ri/features]')
