@@ -22,12 +22,12 @@ const render = ripple => next => el => {
     .filter(not(is.in(css)))
     .map(d => attr('css', (str(attr('css')(el)) + ' ' + d).trim())(el))
 
-  var node = next(el)
+  const node = next(el)
 
   return !node || !node.state ? undefined
        : (features
           .map(key('body'))
-          .map(d => d.call(node.shadowRoot || node, node.state))
+          .map(d => d.call(node.shadowRoot || node, node.shadowRoot || node, node.state))
           , node)
 }
 
