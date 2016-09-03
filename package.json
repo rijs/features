@@ -16,6 +16,7 @@
   "devDependencies": {
     "babel-cli": "*",
     "babel-preset-es2015": "*",
+    "babelify": "^7.3.0",
     "browserify": "*",
     "chai": "*",
     "coveralls": "*",
@@ -24,12 +25,12 @@
     "mocha-lcov-reporter": "*",
     "popper": "*",
     "rijs.components": "*",
-    "rijs.precss": "*",
-    "rijs.needs": "*",
-    "rijs.data": "*",
     "rijs.core": "*",
     "rijs.css": "*",
+    "rijs.data": "*",
     "rijs.fn": "*",
+    "rijs.needs": "*",
+    "rijs.precss": "*",
     "rijs.shadow": "*",
     "uglify-js": "*"
   },
