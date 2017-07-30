@@ -1,7 +1,7 @@
 // -------------------------------------------
 // Extend Components with Features
 // -------------------------------------------
-export default function features(ripple){
+module.exports = function features(ripple){
   if (!client) return
   log('creating')
   ripple.render = render(ripple)(ripple.render)
@@ -32,14 +32,14 @@ const render = ripple => next => el => {
 }
 
 const log = require('utilise/log')('[ri/features]')
-import includes from 'utilise/includes'
-import client from 'utilise/client'
-import header from 'utilise/header'
-import append from 'utilise/append'
-import attr from 'utilise/attr'
-import from from 'utilise/from'
-import not from 'utilise/not'
-import str from 'utilise/str'
-import key from 'utilise/key'
-import by from 'utilise/by'
-import is from 'utilise/is'
+    , includes = require('utilise/includes')
+    , client = require('utilise/client')
+    , header = require('utilise/header')
+    , append = require('utilise/append')
+    , attr = require('utilise/attr')
+    , from = require('utilise/from')
+    , not = require('utilise/not')
+    , str = require('utilise/str')
+    , key = require('utilise/key')
+    , by = require('utilise/by')
+    , is = require('utilise/is')
