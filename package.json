@@ -27,7 +27,6 @@
     "rijs.fn": "*",
     "rijs.needs": "*",
     "rijs.precss": "*",
-    "rijs.shadow": "*",
     "rollup": "*",
     "rollup-plugin-buble": "^0.16.0",
     "rollup-plugin-commonjs": "^8.2.6",

@@ -1,17 +1,16 @@
-import { expect } from 'chai'
-import components from 'rijs.components'
-import precss from 'rijs.precss'
-import needs from 'rijs.needs'
-import core from 'rijs.core'
-import data from 'rijs.data'
-import css from 'rijs.css'
-import fn from 'rijs.fn'
-import features from './'
-
-import time from 'utilise/time'
-import noop from 'utilise/noop'
-import raw from 'utilise/raw'
-import includes from 'utilise/includes'
+const { expect } = require('chai')
+    , components = require('rijs.components')
+    , precss = require('rijs.precss')
+    , needs = require('rijs.needs')
+    , core = require('rijs.core')
+    , data = require('rijs.data')
+    , css = require('rijs.css')
+    , fn = require('rijs.fn')
+    , features = require('./')
+    , includes = require('utilise/includes')
+    , time = require('utilise/time')
+    , noop = require('utilise/noop')
+    , raw = require('utilise/raw')
 
 var container = document.createElement('div')
   , head = document.head
